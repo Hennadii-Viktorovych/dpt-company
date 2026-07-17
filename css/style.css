@@ -39,10 +39,46 @@ body{
 
 .nav__top-list{
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
 .nav__top-auth{
     display: flex;
     gap: 8px;
+}
+
+@media (max-width: 1050px) {
+
+    .top{
+        gap: 15px;
+    }
+
+    .nav__top-list{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 13px;
+    }
+
+    .nav__top-auth{
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 870px) {
+
+
+    .nav__top-list{
+        gap: 10px;
+        font-size: 10px;
+    }
+
+    .nav__top-auth{
+        font-size: 10px;
+        gap: 6px;
+    }
+
 }
