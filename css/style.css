@@ -7,7 +7,6 @@ body{
     overflow-x: hidden;
 }
 
-
 .header{
     display: flex;
     flex-direction: column;
@@ -15,46 +14,115 @@ body{
     align-items: center;
 }
 
-.top{
+.menu__top{
     width: 100%;
-    max-width: 1920px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 80px;
-    padding: 20px  15px ;
+    gap: 100px;
+    padding: 20px  15px;
     background: #1e6140;
     font-weight: 300;
     color: #fff;
-
 }
 
-.nav__top-auth:before{
+.top__auth:before{
     content: "";
     border: 1px solid rgba(255, 255, 255, 0.2);
-    width: 80px;
+    width: 100px;
     height: 0;
     transform: rotate(-90deg);
 }
 
-.nav__top-list{
+.top__list{
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 40px;
 }
 
-.nav__top-auth{
+.top__auth{
     display: flex;
     gap: 8px;
 }
 
+.menu_center{
+    padding: 20px 0 20px;
+}
+
+
+.nav__bottom{
+   margin: 0 auto;
+}
+
+.bottom__list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.bottom__item {
+    width: 202px;
+    height: 40px;
+    border: 1px solid #1e6140;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 16px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.059;
+    text-transform: uppercase;
+    color: #000;
+    transition: background-color ease-in-out 0.3s;
+
+    &:hover {
+        background-color: #e74e13;
+        cursor: pointer;
+        border: none;
+    }
+
+    &:hover .bottom__link {
+        color: #fff;
+    }
+
+    &:hover .icon {
+        color: #ffffff;
+    }
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    color: #84BE51;
+    flex-shrink: 0;
+}
+
+.bottom__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+
 @media (max-width: 1050px) {
 
-    .top{
+    .menu__top{
         gap: 15px;
     }
 
-    .nav__top-list{
+    .top__list{
         display: flex;
         align-items: center;
         flex-wrap: wrap;
@@ -62,21 +130,20 @@ body{
         font-size: 13px;
     }
 
-    .nav__top-auth{
+    .top__auth{
         font-size: 13px;
     }
-
 }
 
 @media (max-width: 870px) {
 
 
-    .nav__top-list{
+    .top__list{
         gap: 10px;
         font-size: 10px;
     }
 
-    .nav__top-auth{
+    .top__auth{
         font-size: 10px;
         gap: 6px;
     }
