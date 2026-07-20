@@ -276,9 +276,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 150px;
-    margin: 0 auto;
-    padding-right: 10px;
 
     background-image:
             linear-gradient(181.56deg, #fefdf4 0.86%, rgba(255, 255, 255, 0) 62.51%),
@@ -289,13 +286,23 @@ body{
     position: relative;
 }
 
+.hero__wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    gap: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 
 
 .hero__content{
     display: block;
     width: 100%;
     max-width: 570px;
-
 }
 
 .image-wrapper {
@@ -312,22 +319,64 @@ body{
     display: block;
 }
 
-.hero__title{
+.image-wrapper::after {
+    content: "";
+    display: inline-block;
+    width: 200px;   /* Ширина вашого листочка (змініть на потрібну) */
+    height: 180px;  /* Висота вашого листочка */
+    background-image: url("../images/1.svg"); /* Шлях до вашої іконки листочка */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: -120px;
+    margin-top: -160px;
+}
+
+.image-wrapper::before {
+    content: "";
+    display: inline-block;
+    width: 200px;   /* Ширина вашого листочка (змініть на потрібну) */
+    height: 180px;  /* Висота вашого листочка */
+    background-image: url("../images/1.svg"); /* Шлях до вашої іконки листочка */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 570px;
+    margin-top: -160px;
+    margin-bottom: -80px;
+    position: relative;
+}
+
+.hero__title {
     font-weight: 300;
 
-    span{
+    span {
         font-weight: 700;
-        font-size: 55px;
+        /* Робимо розмір шрифту заголовка адаптивним */
+        font-size: clamp(32px, 4vw, 55px);
         color: #000;
     }
 }
 
-.hero__text{
-    padding: 10px 0 40px;
-    font-size: 18px;
-    color: rgba(0, 0, 0, 0.5);
+.hero__title::before {
+    content: "";
+    display: inline-block;
+    width: 40px;   /* Ширина вашого листочка (змініть на потрібну) */
+    height: 40px;  /* Висота вашого листочка */
+    background-image: url("../images/ector.svg"); /* Шлях до вашої іконки листочка */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: -50px;
+    margin-right: 12px;
 }
 
+.hero__text {
+    padding: 10px 0 40px;
+    /* Робимо основний текст теж адаптивним */
+    font-size: clamp(14px, 1.2vw, 18px);
+    color: rgba(0, 0, 0, 0.5);
+}
 
 .about{
     display: flex;
@@ -335,7 +384,7 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     gap: 80px;
-    padding: 97px 0 97px;
+    padding: 97px 10px 97px;
 }
 
 .about__content{
@@ -451,6 +500,24 @@ body{
     .top__auth{
         font-size: 10px;
         gap: 6px;
+    }
+
+    .hero__wrapper{
+        flex-wrap: wrap;
+        padding-top: 130px;
+    }
+
+    .image-wrapper img {
+        width: 70%;
+        height: 70%;
+        object-fit: cover;
+        border-radius: 230px 4px 220px 4px; /* великий радіус по діагоналі */
+        display: block;
+    }
+
+    .hero__content{
+        width: 100%;
+        max-width: 500px;
     }
 
 }
