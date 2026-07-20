@@ -329,6 +329,61 @@ body{
 }
 
 
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 97px 0 97px;
+}
+
+.about__content{
+    width: 100%;
+    max-width: 540px;
+}
+
+.about__content::after {
+    content: "";
+    display: inline-block; /* Обов'язково для роботи width/height */
+    width: 20px;           /* Вкажіть реальний розмір картинки */
+    height: 20px;
+    margin: -500px   00px   130px -255px;
+    vertical-align: middle; /* Вирівнює картинку по центру відносно тексту */
+    background-image: url("../images/ector.svg");
+    background-repeat: no-repeat;
+    background-size: contain; /* Щоб картинка вписалася в блок */
+}
+
+.about__img{
+    width: 100%;
+    max-width: 600px;
+}
+
+.about__title{
+     font-weight: 700;
+     font-size: 45px;
+     color: #000;
+    text-align: center;
+ }
+
+
+.about__text, p {
+    padding: 6px;
+    font-size: 0.7rem;color: rgba(0, 0, 0, 0.5);
+}
+
+.about__text, span{
+    font-weight: 700;
+    color: #1e6140;
+}
+
+.content__btn {
+    display: inline-block;
+    margin-top: 37px;
+}
+
+
 
 
 @media (max-width: 1120px) {

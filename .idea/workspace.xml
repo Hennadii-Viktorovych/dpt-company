@@ -7,6 +7,7 @@
     <list default="true" id="6412b3cd-89b8-41cc-bdb5-e459a0cc1cf5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/hero-bgg.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +64,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Gesha\WebstormProjects\dpt-company\images" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Gesha\WebstormProjects\dpt-company\images" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -80,7 +84,8 @@
       <updated>1784300716273</updated>
       <workItem from="1784300717483" duration="7382000" />
       <workItem from="1784353124653" duration="32649000" />
-      <workItem from="1784442838738" duration="2236000" />
+      <workItem from="1784442838738" duration="9376000" />
+      <workItem from="1784528577452" duration="1280000" />
     </task>
     <servers />
   </component>
