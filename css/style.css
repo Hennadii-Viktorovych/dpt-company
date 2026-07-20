@@ -392,17 +392,6 @@ body{
     max-width: 540px;
 }
 
-.about__content::after {
-    content: "";
-    display: inline-block; /* Обов'язково для роботи width/height */
-    width: 20px;           /* Вкажіть реальний розмір картинки */
-    height: 20px;
-    margin: -500px   00px   130px -255px;
-    vertical-align: middle; /* Вирівнює картинку по центру відносно тексту */
-    background-image: url("../images/ector.svg");
-    background-repeat: no-repeat;
-    background-size: contain; /* Щоб картинка вписалася в блок */
-}
 
 .about__img{
     width: 100%;
@@ -417,9 +406,26 @@ body{
  }
 
 
+    .content__title::before {
+        content: "";
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background-image: url("../images/ector.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: 7px;
+        margin-right: 7px;
+        margin-bottom: -7px;
+    }
+
+
 .about__text, p {
     padding: 6px;
     font-size: 0.7rem;color: rgba(0, 0, 0, 0.5);
+}
+.about__text, p:nth-child(5) {
+    margin-bottom: 50px;
 }
 
 .about__text, span{
@@ -428,8 +434,7 @@ body{
 }
 
 .content__btn {
-    display: inline-block;
-    margin-top: 37px;
+
 }
 
 
