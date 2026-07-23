@@ -128,10 +128,12 @@ body{
     cursor: pointer;
     transition: background-color  ease-in-out 0.4s;
     border:  1px solid #84c551;
+    color: #84c551;
 }
 
 .prev:hover, .next:hover {
     background-color:  #84c551;
+    color: white;
 }
 
 .prev { left: 170px; }
@@ -568,8 +570,6 @@ body{
     padding: 50px    50px ;
 }
 
-
-
 .marquee__container {
     width: 100%;
     overflow: hidden;
@@ -598,6 +598,8 @@ body{
     opacity: 1;
     cursor: pointer;
 }
+
+
 
 
 
