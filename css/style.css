@@ -536,6 +536,23 @@ body{
     }
 }
 
+.promotion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 80px;
+    padding: 120px  0 100px ;
+    background-color: #1e6140;
+
+    .promotion__title{
+        font-weight: 700;
+        font-size: 45px;
+        color: #fff;
+    }
+}
+
 
 
 
