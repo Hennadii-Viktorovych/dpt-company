@@ -16,8 +16,6 @@ body{
 
 .btn{
     border-radius: 90px;
-    width: 220px;
-    height: 47px;
     padding: 15px 50px;
     background: #e74e13;
 
@@ -30,9 +28,115 @@ body{
 .btn:hover{
     background-color: #fff;
     color: #000000;
-    border: 1px solid #1e6140;
     border-radius: 90px;
 }
+
+.slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: transform 0.5s ease-in-out;
+    gap: 30px;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 255px;
+    height: 355px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.slide__img {
+    width: 100%;
+    max-width: 97px;
+    height: 220px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.slide__content {
+    background-color: #f7f3ef;
+    border-radius: 16px;
+}
+
+.slide__title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0 0 8px 0;
+}
+
+.slide__text {
+    font-size: 14px;
+    color: #2e7d32;
+    margin: 0 0 5px 0;
+}
+
+.slide__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slide__price {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2e7d32;
+}
+
+.slide__count {
+    display: block;
+    font-size: 14px;
+    color: #666666;
+}
+
+.slide__btn {
+    border-radius: 90px;
+    width: 47px;
+    height: 47px;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: background-color ease-in-out 0.4s;
+}
+
+.slide__btn:hover {
+    border-radius: 90px;
+    width: 47px;
+    height: 47px;
+    background-color: #8d3200;
+}
+
+.prev, .next {
+    border-radius: 100%;
+    position: absolute;
+    transform: translateY(-50%);
+    background-color: #ffffff;
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: background-color  ease-in-out 0.4s;
+    border:  1px solid #84c551;
+}
+
+.prev:hover, .next:hover {
+    background-color:  #84c551;
+}
+
+.prev { left: 170px; }
+.next { right: 170px; }
+
 
 
 .menu__top{
@@ -43,8 +147,12 @@ body{
     gap: 100px;
     padding: 20px  15px;
     background: #1e6140;
-    font-weight: 300;
     color: #fff;
+    transition: color 0.2s;
+
+    &.menu__top a:hover{
+        color: #84be51;
+    }
 }
 
 .top__auth:before{
@@ -67,10 +175,8 @@ body{
 }
 
 
-
 .menu__center{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 50px;
@@ -78,7 +184,7 @@ body{
 }
 
 .center__img-logo{
-    width: clamp(60px, 10vw, 150px); /* мін, гнучкий, макс розмір */
+    width: clamp(60px, 10vw, 150px);
     height: auto;
 }
 
@@ -102,18 +208,16 @@ body{
 }
 
 .search__btn {
+    width: 52px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 50%;
     right: 0;
 
     transform: translateY(-50%);
-
-    width: 52px;
-    height: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     background: transparent;
     border: none;
@@ -164,13 +268,11 @@ body{
     cursor: pointer;
 }
 
-
 .phone__card{
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
-
 
 .counter__list{
     display: flex;
@@ -192,7 +294,6 @@ body{
     transition: background-color ease-in-out 0.3s;
 }
 
-
 .counter__item:hover{
     background-color: #8c3213;
     cursor: pointer;
@@ -202,11 +303,9 @@ body{
     color: #fff;
 }
 
-
 .menu_center{
     padding: 20px 0 20px;
 }
-
 
 .nav__bottom{
    margin: 0 auto;
@@ -274,8 +373,6 @@ body{
     width: 100%;
     height: 700px;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
 
     background-image:
             linear-gradient(181.56deg, #fefdf4 0.86%, rgba(255, 255, 255, 0) 62.51%),
@@ -283,24 +380,19 @@ body{
             url("../images/hero-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
 }
 
 .hero__wrapper{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     flex-direction: row-reverse;
     gap: 70px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-
-
 .hero__content{
-    display: block;
     width: 100%;
     max-width: 570px;
 }
@@ -315,16 +407,15 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 230px 4px 220px 4px; /* великий радіус по діагоналі */
-    display: block;
+    border-radius: 230px 4px 220px 4px;
 }
 
 .image-wrapper::after {
     content: "";
     display: inline-block;
-    width: 200px;   /* Ширина вашого листочка (змініть на потрібну) */
-    height: 180px;  /* Висота вашого листочка */
-    background-image: url("../images/1.svg"); /* Шлях до вашої іконки листочка */
+    width: 200px;
+    height: 180px;
+    background-image: url("../images/1.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -335,9 +426,9 @@ body{
 .image-wrapper::before {
     content: "";
     display: inline-block;
-    width: 200px;   /* Ширина вашого листочка (змініть на потрібну) */
-    height: 180px;  /* Висота вашого листочка */
-    background-image: url("../images/1.svg"); /* Шлях до вашої іконки листочка */
+    width: 200px;
+    height: 180px;
+    background-image: url("../images/1.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -352,7 +443,6 @@ body{
 
     span {
         font-weight: 700;
-        /* Робимо розмір шрифту заголовка адаптивним */
         font-size: clamp(32px, 4vw, 55px);
         color: #000;
     }
@@ -361,9 +451,9 @@ body{
 .hero__title::before {
     content: "";
     display: inline-block;
-    width: 40px;   /* Ширина вашого листочка (змініть на потрібну) */
-    height: 40px;  /* Висота вашого листочка */
-    background-image: url("../images/ector.svg"); /* Шлях до вашої іконки листочка */
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/ector.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -373,9 +463,7 @@ body{
 
 .hero__text {
     padding: 10px 0 40px;
-    /* Робимо основний текст теж адаптивним */
     font-size: clamp(14px, 1.2vw, 18px);
-    color: rgba(0, 0, 0, 0.5);
 }
 
 .about{
@@ -392,7 +480,6 @@ body{
     max-width: 540px;
 }
 
-
 .about__img{
     width: 100%;
     max-width: 600px;
@@ -404,7 +491,6 @@ body{
      color: #000;
     text-align: center;
  }
-
 
     .content__title::before {
         content: "";
@@ -433,9 +519,26 @@ body{
     color: #1e6140;
 }
 
-.content__btn {
 
+.new__products{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 80px;
+    padding: 70px  0 100px ;
+
+    .new__products-title {
+        font-weight: 700;
+        font-size: 45px;
+        color: #000;
+    }
 }
+
+
+
+
 
 
 

@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6412b3cd-89b8-41cc-bdb5-e459a0cc1cf5" name="Changes" comment="" />
+    <list default="true" id="6412b3cd-89b8-41cc-bdb5-e459a0cc1cf5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/123.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/partners'-logo/1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/partners'-logo/2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/partners'-logo/3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/partners'-logo/4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/partners'-logo/5.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/partners'-logo/6.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pet.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/seeds-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +83,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-WS-261.26222.58" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.8665.259" />
       </set>
     </attachedChunks>
   </component>
@@ -81,7 +98,10 @@
       <workItem from="1784353124653" duration="32649000" />
       <workItem from="1784442838738" duration="9376000" />
       <workItem from="1784528577452" duration="4280000" />
-      <workItem from="1784560619940" duration="4689000" />
+      <workItem from="1784560619940" duration="7411000" />
+      <workItem from="1784623528901" duration="357000" />
+      <workItem from="1784812004464" duration="202000" />
+      <workItem from="1784812384684" duration="1038000" />
     </task>
     <servers />
   </component>

@@ -8,7 +8,6 @@
 </head>
 <body>
 
-
 <!-- ===== СПРАЙТ ІКОНОК (має бути на сторінці, невидимий) ===== -->
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
     <defs>
@@ -110,7 +109,7 @@
             </button>
         </div>
 
-        <div class="center__phone">
+        <div class="center__phone phone">
             <svg class="phone__img" width="16" height="16" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g transform="translate(1.6 1.9) scale(0.6)">
                     <path d="M12.1974 14.5454L10.0039 10.6764C9.98716 10.6514 9.97573 10.6233 9.97034 10.5938C9.96495 10.5643 9.96572 10.534 9.97258 10.5047C9.97945 10.4755 9.99227 10.448 10.0102 10.424C10.0282 10.3999 10.051 10.3799 10.077 10.365C10.1031 10.3502 10.132 10.3409 10.1618 10.3377C10.1917 10.3345 10.2219 10.3375 10.2505 10.3465C10.2791 10.3555 10.3056 10.3704 10.3282 10.3901C10.3509 10.4098 10.3692 10.434 10.3821 10.4611L12.5755 14.3302L12.1974 14.5454Z" fill="currentColor"/>
@@ -202,13 +201,8 @@
                 <a href="" class="hero__link-btn btn">Про компанію</a>
             </div>
 
-
         </div>
-
-
-
 </section>
-
 
 <section class="about">
     <img src="./images/about.jpg" alt="" class="about__img">
@@ -228,6 +222,87 @@
 
 </section>
 
+<section class="new__products">
+    <h2 class="new__products-title">Новинки</h2>
 
+<div class="new__products-slider slider">
+
+    <div class="slide">
+        <img src="./images/pet.jpg" alt="" class="slide__img">
+
+        <div class="slide__content">
+            <h3 class="slide__title">Петунія Софістика F1</h3>
+            <p class="slide__text">В наявності</p>
+
+            <div class="slide__bottom">
+                <div class="slide__price-box">
+                    <span class="slide__price">20 грн</span>
+                    <span class="slide__count">1 шт</span>
+                </div>
+                <button class="slide__btn">🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <img src="./images/6.jpg" alt="" class="slide__img">
+
+        <div class="slide__content">
+            <h3 class="slide__title">Петунія Софістика F1</h3>
+            <p class="slide__text">В наявності</p>
+
+            <div class="slide__bottom">
+                <div class="slide__price-box">
+                    <span class="slide__price">20 грн</span>
+                    <span class="slide__count">1 шт</span>
+                </div>
+                <button class="slide__btn">🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <img src="./images/7.jpg" alt="" class="slide__img">
+
+        <div class="slide__content">
+            <h3 class="slide__title">Петунія Софістика F1</h3>
+            <p class="slide__text">В наявності</p>
+
+            <div class="slide__bottom">
+                <div class="slide__price-box">
+                    <span class="slide__price">20 грн</span>
+                    <span class="slide__count">1 шт</span>
+                </div>
+                <button class="slide__btn">🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <img src="./images/8.jpg" alt="" class="slide__img">
+
+        <div class="slide__content">
+            <h3 class="slide__title">Петунія Софістика F1</h3>
+            <p class="slide__text">В наявності</p>
+
+            <div class="slide__bottom">
+                <div class="slide__price-box">
+                    <span class="slide__price">20 грн</span>
+                    <span class="slide__count">1 шт</span>
+                </div>
+                <button class="slide__btn">🛒</button>
+            </div>
+        </div>
+    </div>
+    <button class="prev" onclick="changeSlider(-1)"></button>
+    <button class="next" onclick="changeSlider(1)"></button>
+
+</div>
+
+</section>
+
+
+
+<script src="./index.js"></script>
 </body>
 </html>
