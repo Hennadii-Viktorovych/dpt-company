@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Каталог продукції</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -99,7 +99,7 @@
 
     <nav class="menu__center">
 
-        <a href="" class="center__link-logo"><img src="./images/logo.svg" alt="" class="center__img-logo"></a>
+        <a href="index.html" class="center__link-logo"><img src="./images/logo.svg" alt="" class="center__img-logo"></a>
 
         <div class="search">
             <input type="text" placeholder="Пошук">
@@ -187,253 +187,55 @@
 
 </header>
 
-<section class="hero">
+<section class="hero__catalog">
+    <h2 class="hero__catalog-title">Засоби захисту рослин</h2>
 
-        <div class="hero__wrapper">
-
-            <div class="image-wrapper">
-                <img class="hero__img" src="images/2.jpg" alt="">
-            </div>
-
-            <div class="hero__content">
-                <h1 class="hero__title"><span>Аграрний</span><br>Інтернет-магазин</h1>
-                <p class="hero__text">Основна сфера діяльності – дистрибуція насіння, засобів захисту рослин, мінеральних макро - та мікродобрив</p>
-                <a href="" class="hero__link-btn btn">Про компанію</a>
-            </div>
-
-        </div>
-</section>
-
-<section class="about">
-    <img src="./images/about.jpg" alt="" class="about__img">
-    <div class="about__content">
-        <h2 class="content__title">Про нас</h2>
-        <p class="content__text"><span class="content__span">«Компанія ТОВ “ДАМАР АГРОТРЕЙД”</span> — молода команда, яка з’явилась на аграрному ринку у 2020 році. Ми не боїмось труднощів і викликів. Тому навіть складний ковідний період, світова пандемія не стали на заваді успішному старту.
-        </p>
-        <p class="content__text">Отже,<span>ми — сміливі, ми — драйвові,</span>  ми — ті, що розвивають рослинництво та допомагають ставати успішними тисячам вітчизняних аграріїв.</p>
-
-        <p class="content__text"><span>Бачення:</span>компанія ТОВ “ДАМАР АГРОТРЕЙД” тримає курс на підвищення престижності, довіри до засобів захисту рослин made in UA. Прагнемо, аби в кожному регіоні України наш споживач мав доступ до якісної продукції та консалтингу від фахівців команди.
-        </p>
-
-        <p class="content__text"><span>Місія:</span>усе продуктове портфоліо, консультативні послуги ТОВ “ДАМАР АГРОТРЕЙД” направлені на підвищення рентабельності рослинництва в мінливих кліматичних умовах України. Також ставимо собі завдання підвищувати обізнаність клієнтів щодо сучасних методів ведення рослинництва...</p>
-
-        <a href="" class="content__btn btn">Докладніше</a>
-     </div>
-
-</section>
-
-<section class="new__products">
-    <h2 class="new__products-title">Новинки</h2>
-
-<div class="new__products-slider slider">
-
-    <div class="slide">
-        <img src="./images/pet.jpg" alt="" class="slide__img">
-
-        <div class="slide__content">
-            <h3 class="slide__title">Петунія Софістика F1</h3>
-            <p class="slide__text">В наявності</p>
-
-            <div class="slide__bottom">
-                <div class="slide__price-box">
-                    <span class="slide__price">20 грн</span>
-                    <span class="slide__count">1 шт</span>
-                </div>
-                <button class="slide__btn">🛒</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="slide">
-        <img src="./images/6.jpg" alt="" class="slide__img">
-
-        <div class="slide__content">
-            <h3 class="slide__title">Петунія Софістика F1</h3>
-            <p class="slide__text">В наявності</p>
-
-            <div class="slide__bottom">
-                <div class="slide__price-box">
-                    <span class="slide__price">20 грн</span>
-                    <span class="slide__count">1 шт</span>
-                </div>
-                <button class="slide__btn">🛒</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="slide">
-        <img src="./images/7.jpg" alt="" class="slide__img">
-
-        <div class="slide__content">
-            <h3 class="slide__title">Петунія Софістика F1</h3>
-            <p class="slide__text">В наявності</p>
-
-            <div class="slide__bottom">
-                <div class="slide__price-box">
-                    <span class="slide__price">20 грн</span>
-                    <span class="slide__count">1 шт</span>
-                </div>
-                <button class="slide__btn">🛒</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="slide">
-        <img src="./images/8.jpg" alt="" class="slide__img">
-
-        <div class="slide__content">
-            <h3 class="slide__title">Петунія Софістика F1</h3>
-            <p class="slide__text">В наявності</p>
-
-            <div class="slide__bottom">
-                <div class="slide__price-box">
-                    <span class="slide__price">20 грн</span>
-                    <span class="slide__count">1 шт</span>
-                </div>
-                <button class="slide__btn">🛒</button>
-            </div>
-        </div>
-    </div>
-
-    <button class="prev" onclick="changeSlider(-1)"><svg width="20" height="18" viewBox="0 0 20 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path d="M18.7979 7.17227C18.716 7.15899 18.6332 7.15286 18.5504 7.15394H4.44077L4.74843 7.01084C5.04917 6.8685 5.32275 6.67478 5.55694 6.43844L9.51363 2.48176C10.0347 1.98431 10.1223 1.18407 9.72112 0.585694C9.25422 -0.0519459 8.35882 -0.190394 7.72113 0.276511C7.66962 0.314253 7.62065 0.355394 7.57464 0.399666L0.419694 7.55462C-0.139465 8.11315 -0.139957 9.01919 0.418576 9.57835C0.418933 9.57871 0.419336 9.57911 0.419694 9.57947L7.57464 16.7344C8.13424 17.2925 9.04028 17.2912 9.59837 16.7316C9.64228 16.6875 9.68329 16.6407 9.72112 16.5913C10.1223 15.9929 10.0347 15.1927 9.51363 14.6953L5.5641 10.7314C5.35415 10.5212 5.11275 10.345 4.8486 10.2091L4.41931 10.0159H18.4716C19.2026 10.0431 19.844 9.53242 19.9813 8.81389C20.1078 8.03377 19.578 7.29883 18.7979 7.17227Z" fill="currentColor" />
-    </svg></button>
-    <button class="next" onclick="changeSlider(1)"><svg width="20" height="18" viewBox="0 0 20 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1.20212 7.17227C1.28395 7.15899 1.36677 7.15286 1.44964 7.15394H15.5592L15.2516 7.01084C14.9508 6.8685 14.6772 6.67478 14.4431 6.43844L10.4864 2.48176C9.96527 1.98431 9.87771 1.18407 10.2789 0.585694C10.7458 -0.0519459 11.6412 -0.190394 12.2789 0.276511C12.3304 0.314253 12.3793 0.355394 12.4254 0.399666L19.5803 7.55462C20.1395 8.11315 20.14 9.01919 19.5814 9.57835C19.5811 9.57871 19.5807 9.57911 19.5803 9.57947L12.4254 16.7344C11.8658 17.2925 10.9597 17.2912 10.4016 16.7316C10.3577 16.6875 10.3167 16.6407 10.2789 16.5913C9.87771 15.9929 9.96527 15.1927 10.4864 14.6953L14.4359 10.7314C14.6459 10.5212 14.8872 10.345 15.1514 10.2091L15.5807 10.0159H1.52839C0.797373 10.0431 0.156021 9.53242 0.018692 8.81389C-0.107817 8.03377 0.422007 7.29883 1.20212 7.17227Z" fill="currentColor" />
-    </svg></button>
-
-</div>
-
-</section>
-
-<section class="promotion">
-    <h2 class="promotion__title">Акції</h2>
-    <div class="promotion__slider slider">
-
-        <div class="slider">
-
-            <div class="slide">
-                <img src="./images/pet.jpg" alt="" class="slide__img">
-
-                <div class="slide__content">
-                    <h3 class="slide__title">Петунія Софістика F1</h3>
-                    <p class="slide__text">В наявності</p>
-
-                    <div class="slide__bottom">
-                        <div class="slide__price-box">
-                            <span class="slide__price">20 грн</span>
-                            <span class="slide__count">1 шт</span>
-                        </div>
-                        <button class="slide__btn">🛒</button>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="slide">
-                <img src="./images/6.jpg" alt="" class="slide__img">
-
-                <div class="slide__content">
-                    <h3 class="slide__title">Петунія Софістика F1</h3>
-                    <p class="slide__text">В наявності</p>
-
-                    <div class="slide__bottom">
-                        <div class="slide__price-box">
-                            <span class="slide__price">20 грн</span>
-                            <span class="slide__count">1 шт</span>
-                        </div>
-                        <button class="slide__btn">🛒</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="slide">
-                <img src="./images/7.jpg" alt="" class="slide__img">
-
-                <div class="slide__content">
-                    <h3 class="slide__title">Петунія Софістика F1</h3>
-                    <p class="slide__text">В наявності</p>
-
-                    <div class="slide__bottom">
-                        <div class="slide__price-box">
-                            <span class="slide__price">20 грн</span>
-                            <span class="slide__count">1 шт</span>
-                        </div>
-                        <button class="slide__btn">🛒</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="slide">
-                <img src="./images/8.jpg" alt="" class="slide__img">
-
-                <div class="slide__content">
-                    <h3 class="slide__title">Петунія Софістика F1</h3>
-                    <p class="slide__text">В наявності</p>
-
-                    <div class="slide__bottom">
-                        <div class="slide__price-box">
-                            <span class="slide__price">20 грн</span>
-                            <span class="slide__count">1 шт</span>
-                        </div>
-                        <button class="slide__btn">🛒</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <button class="prev" onclick="changeSlider(-1)"><svg width="20" height="18" viewBox="0 0 20 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M18.7979 7.17227C18.716 7.15899 18.6332 7.15286 18.5504 7.15394H4.44077L4.74843 7.01084C5.04917 6.8685 5.32275 6.67478 5.55694 6.43844L9.51363 2.48176C10.0347 1.98431 10.1223 1.18407 9.72112 0.585694C9.25422 -0.0519459 8.35882 -0.190394 7.72113 0.276511C7.66962 0.314253 7.62065 0.355394 7.57464 0.399666L0.419694 7.55462C-0.139465 8.11315 -0.139957 9.01919 0.418576 9.57835C0.418933 9.57871 0.419336 9.57911 0.419694 9.57947L7.57464 16.7344C8.13424 17.2925 9.04028 17.2912 9.59837 16.7316C9.64228 16.6875 9.68329 16.6407 9.72112 16.5913C10.1223 15.9929 10.0347 15.1927 9.51363 14.6953L5.5641 10.7314C5.35415 10.5212 5.11275 10.345 4.8486 10.2091L4.41931 10.0159H18.4716C19.2026 10.0431 19.844 9.53242 19.9813 8.81389C20.1078 8.03377 19.578 7.29883 18.7979 7.17227Z" fill="currentColor" />
-        </svg></button>
-        <button class="next" onclick="changeSlider(1)"><svg width="20" height="18" viewBox="0 0 20 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.20212 7.17227C1.28395 7.15899 1.36677 7.15286 1.44964 7.15394H15.5592L15.2516 7.01084C14.9508 6.8685 14.6772 6.67478 14.4431 6.43844L10.4864 2.48176C9.96527 1.98431 9.87771 1.18407 10.2789 0.585694C10.7458 -0.0519459 11.6412 -0.190394 12.2789 0.276511C12.3304 0.314253 12.3793 0.355394 12.4254 0.399666L19.5803 7.55462C20.1395 8.11315 20.14 9.01919 19.5814 9.57835C19.5811 9.57871 19.5807 9.57911 19.5803 9.57947L12.4254 16.7344C11.8658 17.2925 10.9597 17.2912 10.4016 16.7316C10.3577 16.6875 10.3167 16.6407 10.2789 16.5913C9.87771 15.9929 9.96527 15.1927 10.4864 14.6953L14.4359 10.7314C14.6459 10.5212 14.8872 10.345 15.1514 10.2091L15.5807 10.0159H1.52839C0.797373 10.0431 0.156021 9.53242 0.018692 8.81389C-0.107817 8.03377 0.422007 7.29883 1.20212 7.17227Z" fill="currentColor" />
-        </svg></button>
-
-    </div>
-
-    <a href="" class="new__products-btn btn">Дивитися усі товари</a>
-
-</section>
-
-<section class="partners">
-    <h2 class="partners__title">Партнери</h2>
-
-    <div class="marquee__container">
-        <ul class="marquee__list">
-            <li class="marquee__item"><a href="" class="marquee__link"><img src="./images/partners'-logo/1.svg" alt="" class="marquee__img"></a></li>
-            <li class="marquee__item"><a href="" class="marquee__link"><img src="./images/partners'-logo/2.svg" alt="" class="marquee__img"></a></li>
-            <li class="marquee__item"><a href="" class="marquee__link"><img src="./images/partners'-logo/3.svg" alt="" class="marquee__img"></a></li>
-            <li class="marquee__item"><a href="" class="marquee__link"><img src="./images/partners'-logo/4.svg" alt="" class="marquee__img"></a></li>
-            <li class="marquee__item"><a href="" class="marquee__link"><img src="./images/partners'-logo/5.svg" alt="" class="marquee__img"></a></li>
-            <li class="marquee__item"><a href="" class="marquee__link"><img src="./images/partners'-logo/6.svg" alt="" class="marquee__img"></a></li>
-            <li class="marquee__item"><a href="" class="marquee__link"><img src="./images/partners'-logo/1.svg" alt="" class="marquee__img"></a></li>
-            <li class="marquee__item"><a href="" class="marquee__link"><img src="./images/partners'-logo/2.svg" alt="" class="marquee__img"></a></li>
-            <li class="marquee__item"><a href="" class="marquee__link"><img src="./images/partners'-logo/3.svg" alt="" class="marquee__img"></a></li>
-            <li class="marquee__item"><a href="" class="marquee__link"><img src="./images/partners'-logo/4.svg" alt="" class="marquee__img"></a></li>
-            <li class="marquee__item"><a href="" class="marquee__link"><img src="./images/partners'-logo/5.svg" alt="" class="marquee__img"></a></li>
-            <li class="marquee__item"><a href="" class="marquee__link"><img src="./images/partners'-logo/6.svg" alt="" class="marquee__img"></a></li>
+    <div class="hero__catalog-content">
+        <ul class="catalog__list">
+            <li class="catalog__item"><img src="./images/11111111111.jpg" alt="" class="catalog__img"><a href="" class="catalog__link">Гербіциди</a>
+            </li>
+            <li class="catalog__item"><img src="./images/11111111111.jpg" alt="" class="catalog__img"><a href="" class="catalog__link">Гербіциди</a>
+            </li>
+            <li class="catalog__item"><img src="./images/11111111111.jpg" alt="" class="catalog__img"><a href="" class="catalog__link">Гербіциди</a>
+            </li>
+            <li class="catalog__item"><img src="./images/11111111111.jpg" alt="" class="catalog__img"><a href="" class="catalog__link">Гербіциди</a>
+            </li>
+            <li class="catalog__item"><img src="./images/11111111111.jpg" alt="" class="catalog__img"><a href="" class="catalog__link">Гербіциди</a>
+            </li>
+            <li class="catalog__item"><img src="./images/11111111111.jpg" alt="" class="catalog__img"><a href="" class="catalog__link">Гербіциди</a>
+            </li>
+            <li class="catalog__item"><img src="./images/11111111111.jpg" alt="" class="catalog__img"><a href="" class="catalog__link">Гербіциди</a>
+            </li>
+            <li class="catalog__item"><img src="./images/11111111111.jpg" alt="" class="catalog__img"><a href="" class="catalog__link">Гербіциди</a>
+            </li>
         </ul>
     </div>
 
 </section>
 
-<section class="seeds">
-    <div class="seeds__content">
-        <h2 class="seeds__title">Семена</h2>
-        <p class="seeds__text">Вирощування овочів, квітів на своїй ділянці або просто на балконі - це улюблене заняття багатьох дачників та городників. Звичайно, свіжі овочі з власного городу натуральні, смачні та корисні. Але щоб отримати хороший урожай томату або капусти, насолоджуватися цвітінням петунії або троянди, важливо не тільки правильно доглядати за рослинами. Все починається із вибору посівного матеріалу. І тут постає питання: яке насіння вибрати? Адже вони мають бути якісними, давати гарну схожість.</p>
-        <p class="seeds__text">Предлагаем покупателям широкий выбор семян овощей. У нас вы можете найти семена баклажан, разных видов капусты, бобовых и бахчевых культур, томата, перца, огурцов, лука, салата, чеснока, картофеля от отечественных и зарубежных производителей.
+<section class="catalog__info">
+    <div class="catalog__info-text">
+        <h2 class="catalog__info-title">Засоби захисту рослин</h2>
+
+        <p class="catalog__info-text">
+            Засоби захисту рослин поділяють на чотири основні види: механічні, хімічні, біологічні та агротехнічні. Проте найраціональніше - це їх одночасне, правильне поєднання. Найпоширеніший метод - це хімічний. Існують тисячі різних видів препаратів хімічного захисту. Але не варто їх плутати, а тим більше об′єднувати з хімічними добривами. Методи їх впливу на рослини абсолютно протилежні.
         </p>
-        <p class="seeds__text">Также вы можете найти в нашем каталоге семена цветов: однолетних (петуния, львиный зев, календула и т.д.), двулетних (виола, примула, мальва), многолетних (иберис, анемона, гибискус, дельфиниум, фрезия), луковичных (тюльпаны, лилия, ирис, нарциссы), комнатных (гербера, бегония, кактус, мимоза, пасифлора). Конечно, это далеко не весь список — каждая хозяйка найдет здесь свой любимый цветок.
+
+        <p class="catalog__info-text">
+            Необхідно знати і розрізняти хімічні засоби захисту рослин. Адже ці препарати мають суоро визначений об′єкт впливу (збудник хвороби, комахи-шкідники, вид або родина бур′янів).
         </p>
-        <p class="seeds__text">В широком ассортименте представлены саженцы плодовых деревьев, роз, ягодных кустов. У нас вы можете купить семена газонной травы, а также сопутствующие товары: удобрения, средства защиты, биопрепараты, садовый инвентарь, субстраты, грунты, агроволокно, горшки, кассеты для рассады.</p>
+
+        <p class="catalog__info-text">
+            Отрутохімікати не терплять халатності. Це той тип препарату, який недостатньо просто розвести у воді і обприскати ним рослини. Якщо отрутохімікати неправильно застосувати, то вони можуть завдати шкоди вам, корисним комахам, урожаю.
+        </p>
+
     </div>
 </section>
 
 <footer class="footer">
 
     <ul class="logo__list">
-        <li class="logo__item"><a href="" class="logo__link"><img src="./images/logo.svg" alt="" class="logo__img"></a></li>
+        <li class="logo__item"><a href="index.html" class="logo__link"><img src="./images/logo.svg" alt="" class="logo__img"></a></li>
         <li class="logo__item">Пропонуємо покупцям широкий вибір насіння овочів</li>
     </ul>
 
@@ -446,7 +248,7 @@
 
     <ul class="products__list">
         <li class="products__item">Товари</li>
-        <li class="products__item"><a href="" class="products__link">Каталог продукції</a></li>
+        <li class="products__item"><a href="catalog.html" class="products__link">Каталог продукції</a></li>
         <li class="products__item"><a href="" class="products__link">Засоби захисту рослин</a></li>
         <li class="products__item"><a href="" class="products__link">Насіння</a></li>
         <li class="products__item"><a href="" class="products__link">Добрива</a></li>
@@ -458,11 +260,10 @@
         <div class="phone__card">
             <a href="tel:+380671150058" class="phone__number">+38 (067) 115 00 58</a>
             <span class="phone__text">Замовити зворотній зв’язок</span></div>
-            <a href="mailto:DAT@gmail.com">DAT@gmail.com</a>
+        <a href="mailto:DAT@gmail.com">DAT@gmail.com</a>
     </div>
 
 </footer>
 
-<script src="./index.js"></script>
 </body>
 </html>
